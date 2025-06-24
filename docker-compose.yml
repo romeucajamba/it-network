@@ -1,0 +1,11 @@
+
+
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=itnetworkdb'
+      - 'POSTGRES_PASSWORD=itnetwork_pass'
+      - 'POSTGRES_USER=itnetwork_user'
+    ports:
+      - '5432:5432'
